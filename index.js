@@ -40,6 +40,7 @@ function signin()
         if(prompt("What is your Password?") == Password && Password != "")
         {
             document.getElementById("username").innerText = "Hello, "+ Username
+            document.getElementById('SignIn').style.display = 'none';
             Login = "true"
             SaveCookie()
         }
